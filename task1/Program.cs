@@ -3,8 +3,13 @@
 // одновременно 7 и 23
 
 // Вводим число
+using System;
+class Program
+{
+static void Main()
+{
 Console.WriteLine("Введите число:");
-int num = int.Parse(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 
 // Составляем алгаритм по кратности чисел 7 и 23
 if (num % 7 == 0 && num % 23 == 0)
@@ -14,4 +19,6 @@ if (num % 7 == 0 && num % 23 == 0)
 else
 {
     Console.WriteLine($"a = {num} => нет");
+}
+}
 }
